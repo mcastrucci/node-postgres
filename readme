@@ -1,0 +1,24 @@
+In order to make it work, you will need to create a .env file with the following parameters, (you can also pass them as properties
+ie: PGHOST=test node index.js)
+
+PGHOST, PGUSER, PGDATABASE, PGPASSWORD and PGPORT
+
+DB deply config
+
+$psql
+$CREATE DATABASE postgreSample;
+$\c posgresample
+
+postgresample=# CREATE TABLE names (id SERIAL PRIMARY KEY, name VARCHAR(255) UNIQUE NOT NULL);
+CREATE TABLE
+
+postgresample=# INSERT INTO names VALUES (1, 'maximiliano');
+INSERT 0 1
+
+
+output example:
+---- node .\index.js
+maximiliano
+Cynthia
+Emma
+
